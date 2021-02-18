@@ -331,7 +331,7 @@ void FlockingBirds::print() {
         glColor3f(0.0,0.0,0.0);
         if ( i < n_target_ ) {
             glColor3f(1.0,0.0,0.0);
-            r *= 2.0;
+            r *= 0.0;
         }
         glBegin(GL_POLYGON);
             glVertex3f(x_[i],  y_[i],  z_[i]);
