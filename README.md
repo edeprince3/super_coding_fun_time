@@ -1,6 +1,6 @@
 # Super Coding Fun Time
 
-This is the github repository associated with the Twitch stream "Super Coding Fun Time with Me, Eugene" (see https://www.twitch.tv/totally_not_eugene).
+This is the github repository associated with the Twitch stream "Super Coding Fun Time with me, Eugene" (see https://www.twitch.tv/totally_not_eugene).
 
 You can check out the repository and explore the following projects:
 
