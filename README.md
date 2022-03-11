@@ -6,7 +6,7 @@ You can check out the repository and explore the following projects:
 
 ### birds
 
-Simple rules applied to individual objects can lead to complex collective phenomena. In this project, I use OpenGL to render a "flock" of squares and try to coax some emergent behavior out of them. With just the right balance of attractive / repulsive interactions, as well a bit of goal-seeking, some pretty neat behavior emerges.
+Simple rules applied to individual objects can lead to complex collective phenomena. In this project, I use OpenGL to render a "flock" of squares and try to coax some emergent behavior out of them. With just the right balance of attractive / repulsive interactions, as well a bit of goal-seeking, some pretty neat behavior emerges. You can watch the video that goes with this project here: https://youtu.be/UJc1-sj8cOg.
 
 ### sudoku
 
