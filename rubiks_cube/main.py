@@ -21,13 +21,14 @@
 #
 
 from rubiks_cube import *
+from rubiks_cube_solver import *
 
 def main():
 
     scene = canvas(title="Rubik's cube", width = 600, height=600, range=6)
     scene.forward = vector(-0.451197, -0.479426, -0.75271)
 
-    cube = rubiks_cube(scene)
+    cube = rubiks_cube_solver(scene)
 
     while True:
 
@@ -64,6 +65,21 @@ def main():
             cube.bring_to_front("right")
         if ev.key == 'right':
             cube.bring_to_front("left")
+
+        # solve
+        if ev.key == 'o':
+            cube.locate_origin()
+            cube.form_cross()
+            cube.solve_top_layer()
+            cube.solve_middle_layer()
+            cube.form_bottom_cross()
+            cube.permute_bottom_corners()
+            cube.orient_bottom_corners()
+            cube.permute_bottom_edges()
+
+        # jumble
+        if ev.key == 'j':
+            cube.jumble_cube(15)
 
 
 if __name__ == "__main__":

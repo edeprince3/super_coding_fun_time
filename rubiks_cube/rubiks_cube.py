@@ -207,7 +207,7 @@ class rubiks_cube():
         self.bottom.is_movable[8] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -309,7 +309,7 @@ class rubiks_cube():
         self.bottom.is_movable[6] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -413,7 +413,7 @@ class rubiks_cube():
         self.top.is_movable[8] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -517,7 +517,7 @@ class rubiks_cube():
         self.top.is_movable[2] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -621,7 +621,7 @@ class rubiks_cube():
         self.left.is_movable[8] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -725,7 +725,7 @@ class rubiks_cube():
         self.left.is_movable[3] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -844,7 +844,7 @@ class rubiks_cube():
         self.left.is_movable[5] = True
 
         box = self.render_cube()
-        dtheta = 0.1
+        dtheta = 0.2
         theta = 0.0
         while True:
             rate(30) # limit animation rate, render scene 
@@ -938,7 +938,7 @@ class rubiks_cube():
             self.right.is_movable[:] = True
 
             box = self.render_cube()
-            dtheta = 0.1
+            dtheta = 0.2
             theta = 0.0
             while True:
                 rate(30) # limit animation rate, render scene 
@@ -967,7 +967,7 @@ class rubiks_cube():
             self.right.is_movable[:] = True
 
             box = self.render_cube()
-            dtheta = 0.1
+            dtheta = 0.2
             theta = 0.0
             while True:
                 rate(30) # limit animation rate, render scene 
@@ -1020,7 +1020,7 @@ class rubiks_cube():
             self.right.is_movable[:] = True
 
             box = self.render_cube()
-            dtheta = 0.1
+            dtheta = 0.2
             theta = 0.0
             while True:
                 rate(30) # limit animation rate, render scene 
@@ -1049,7 +1049,7 @@ class rubiks_cube():
             self.right.is_movable[:] = True
 
             box = self.render_cube()
-            dtheta = 0.1
+            dtheta = 0.2
             theta = 0.0
             while True:
                 rate(30) # limit animation rate, render scene 
@@ -1077,6 +1077,10 @@ class rubiks_cube():
         elif face == "top":
 
             self.bring_to_top("back")
+
+        elif face == "bottom":
+
+            self.bring_to_top("front")
 
     def __init__(self, scene):
 
